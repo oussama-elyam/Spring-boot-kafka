@@ -12,6 +12,12 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+In this class, we’ll configure the properties like the server URL, the key type, and the value type for our message.
+Also, we have to configure the producer factory and the Kafka template.
+the Kafka template object will be used for sending our message.
+ */
+
 @Configuration
 public class KafkaProducerConfig {
 

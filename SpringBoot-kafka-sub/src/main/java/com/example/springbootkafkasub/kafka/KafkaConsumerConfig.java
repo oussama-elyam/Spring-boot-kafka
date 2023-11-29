@@ -13,7 +13,12 @@ import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 
 import java.util.HashMap;
 import java.util.Map;
-
+/*
+we have a similar configuration with our publisher project.
+But we have to change the consumer config props to ConsumerConfig.
+And, we don’t have a Kafka template like in our publisher project,
+but we have a consumer factory that will listen to the apache kafka server.
+ */
 @Configuration
 public class KafkaConsumerConfig {
     @Value("${spring.kafka.bootstrap-server}")

@@ -33,3 +33,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Exclude .mvn/wrapper directory, mvnw.cmd, and .mvnw files
+*/.mvn/wrapper/
+*/mvnw.cmd
+*/mvnw

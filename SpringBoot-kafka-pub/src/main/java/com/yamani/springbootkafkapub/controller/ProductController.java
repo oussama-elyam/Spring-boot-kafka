@@ -23,6 +23,7 @@ public class ProductController {
     public boolean createProduct(@RequestBody ProductRequest request) {
         try{
             ObjectMapper mapper = new ObjectMapper();
+            //we have to convert the request into a JSON string to send the message to our Kafka.
             String reqJson = mapper.writeValueAsString(request);
             kafkaTemplate.send(kafkaTopicConfig.productTopic().name(), reqJson);
 
